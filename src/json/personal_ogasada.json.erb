@@ -2,6 +2,16 @@
     "title": "Personal rules (@ogasada)",
     "rules": [
         {
+            "description": "Change keybind",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": <%= from("fn", [""], ["any"]) %>,
+                    "to": <%= to([["left_option"]]) %>
+                }
+            ]
+        },
+        {
             "description": "Emacs key bindings [control+keys]",
             "manipulators": [
                 {
