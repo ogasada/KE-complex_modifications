@@ -2,6 +2,30 @@
   "title": "Personal rules (@ogasada)",
   "rules": [
     {
+      "description": "Change keybind",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "fn",
+            "modifiers": {
+              "mandatory": [
+                ""
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "left_option"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "description": "Emacs key bindings [control+keys]",
       "manipulators": [
         {
@@ -1163,7 +1187,7 @@
           },
           "to": [
             {
-              "key_code": "v",
+              "key_code": "c",
               "modifiers": [
                 "command"
               ]
