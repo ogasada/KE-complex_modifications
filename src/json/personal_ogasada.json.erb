@@ -73,6 +73,18 @@
                 },
                 {
                     "type": "basic",
+                    "from": <%= from("a", ["control"], ["caps_lock", "shift", "option"]) %>,
+                    "to": <%= to([["left_arrow", ["command"]]]) %>,
+                    "conditions": [ <%= frontmost_application_unless("emacs_key_bindings_exception") %> ]
+                },
+                {
+                    "type": "basic",
+                    "from": <%= from("e", ["control"], ["caps_lock", "shift", "option"]) %>,
+                    "to": <%= to([["right_arrow", ["command"]]]) %>,
+                    "conditions": [ <%= frontmost_application_unless("emacs_key_bindings_exception") %> ]
+                },
+                {
+                    "type": "basic",
                     "from": <%= from("v", ["control"], ["caps_lock", "shift"]) %>,
                     "to": <%= to([["page_down"]]) %>,
                     "conditions": [ <%= frontmost_application_unless("emacs_key_bindings_exception") %> ]
