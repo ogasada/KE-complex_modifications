@@ -9,9 +9,6 @@
           "from": {
             "key_code": "caps_lock",
             "modifiers": {
-              "mandatory": [
-                ""
-              ],
               "optional": [
                 "any"
               ]
@@ -28,9 +25,6 @@
           "from": {
             "key_code": "fn",
             "modifiers": {
-              "mandatory": [
-                ""
-              ],
               "optional": [
                 "any"
               ]
